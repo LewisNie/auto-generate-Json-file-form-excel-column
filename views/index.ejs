@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>json</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script src="/public/components/angular/angular.js"></script>
+    <link rel="stylesheet" href="/components/bootstrap/dist/css/bootstrap.css"/>
+    <script src="/components/angular/angular.js"></script>
+      <script src="/javascripts/autoGenJson.js"></script>
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+  <body ng-app="autoGenJson" ng-controller="autoGenController">
+   <div style="width: 500px" >
+       <div>
+           <label class="col-md-5">Enter Attribute in Json:</label>
+           <input  type="text" class="col-md-7" ng-model="attribtue"/>
+       </div>
+
+       <textarea class="form-control" ng-model="value"></textarea>
+   </div>
+    <textarea style="height: 400px;width: 400px" ng-model="displayObj"></textarea>
+    <input type="submit" ng-click="createJson(attribtue,value)">
   </body>
 </html>
