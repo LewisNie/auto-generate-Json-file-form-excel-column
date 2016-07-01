@@ -1,0 +1,21 @@
+{
+  "name": "autogenerateJson",
+  "description": "",
+  "main": "",
+  "authors": [
+    "luyuannie <nie.luyuan@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7"
+  }
+}
